@@ -1,29 +1,29 @@
 :root {
-  --bg: #edcf6c;
+  --bg: #f4f6f9;
   --panel: #ffffff;
-  --ink: #22243a;
-  --ink-soft: #5b5e76;
-  --line: #e4e1d6;
-  --indigo: #232b4d;
-  --indigo-soft: #3a4372;
-  --gold: #c79a3e;
-  --gold-soft: #f1e4c3;
-  --danger: #b44b3e;
+  --ink: #0f172a;
+  --ink-soft: #475569;
+  --line: #cbd5e1;
+  --indigo: #1e3a8a;
+  --indigo-soft: #2563eb;
+  --gold: #d97706;
+  --gold-soft: #fef3c7;
+  --danger: #dc2626;
   --radius: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #181a26;
-    --panel: #1f2236;
-    --ink: #edeef5;
-    --ink-soft: #a7aac2;
-    --line: #333752;
-    --indigo: #edeef5;
-    --indigo-soft: #b9bede;
-    --gold: #d9ae58;
-    --gold-soft: #3a3320;
-    --danger: #e28575;
+    --bg: #0b0f19;
+    --panel: #111827;
+    --ink: #f8fafc;
+    --ink-soft: #94a3b8;
+    --line: #334155;
+    --indigo: #3b82f6;
+    --indigo-soft: #60a5fa;
+    --gold: #f59e0b;
+    --gold-soft: #451a03;
+    --danger: #ef4444;
   }
 }
 
@@ -71,7 +71,7 @@ select {
   width: 220px;
   flex: 0 0 220px;
   background: var(--indigo);
-  color: #a2bde4;
+  color: #e2e8f0;
   padding: 28px 18px;
   display: flex;
   flex-direction: column;
@@ -89,11 +89,12 @@ select {
   font-weight: 700;
   font-size: 19px;
   letter-spacing: -0.01em;
+  color: #ffffff;
 }
 
 .brand .sub {
   font-size: 12px;
-  color: #b9bede;
+  color: #94a3b8;
 }
 
 .nav {
@@ -106,7 +107,7 @@ select {
   text-align: left;
   background: transparent;
   border: none;
-  color: #cdd1ea;
+  color: #cbd5e1;
   padding: 10px 12px;
   border-radius: 8px;
   font-size: 14.5px;
@@ -121,17 +122,18 @@ select {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #5a6296;
+  background: #64748b;
   flex: 0 0 auto;
 }
 
 .nav button:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
 }
 
 .nav button.active {
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 .nav button.active .dot {
@@ -141,7 +143,7 @@ select {
 .sidebar-foot {
   margin-top: auto;
   font-size: 11.5px;
-  color: #7e86b2;
+  color: #94a3b8;
   line-height: 1.5;
 }
 
@@ -163,6 +165,7 @@ select {
 
 .topline h1 {
   font-size: 26px;
+  color: var(--ink);
 }
 
 .topline .meta {
@@ -189,6 +192,7 @@ select {
   font-family: "Space Grotesk";
   font-size: 26px;
   font-weight: 700;
+  color: var(--ink);
 }
 
 .stat .l {
@@ -211,6 +215,7 @@ select {
 .panel h2 {
   font-size: 15px;
   margin-bottom: 14px;
+  color: var(--ink);
 }
 
 .toolbar {
@@ -251,7 +256,7 @@ select {
 
 .btn-primary {
   background: var(--indigo);
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -277,7 +282,7 @@ select {
 }
 
 .btn-danger:hover {
-  background: rgba(180, 75, 62, 0.1);
+  background: rgba(220, 38, 38, 0.1);
 }
 
 .btn-small {
@@ -297,13 +302,14 @@ th {
   color: var(--ink-soft);
   font-size: 12px;
   padding: 8px 10px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 2px solid var(--line);
 }
 
 td {
   padding: 11px 10px;
   border-bottom: 1px solid var(--line);
   vertical-align: middle;
+  color: var(--ink);
 }
 
 tr:last-child td {
@@ -321,12 +327,12 @@ tr:last-child td {
   font-size: 11.5px;
   font-weight: 600;
   background: var(--gold-soft);
-  color: #8a6a1e;
+  color: #b45309;
 }
 
 @media (prefers-color-scheme: dark) {
   .badge {
-    color: #e9c877;
+    color: #fbbf24;
   }
 }
 
@@ -346,7 +352,7 @@ tr:last-child td {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(20, 20, 30, 0.45);
+  background: rgba(11, 15, 25, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,6 +372,7 @@ tr:last-child td {
 .modal h3 {
   font-size: 17px;
   margin-bottom: 16px;
+  color: var(--ink);
 }
 
 .field {
@@ -421,6 +428,7 @@ tr:last-child td {
   font-weight: 600;
   font-size: 14.5px;
   margin-bottom: 4px;
+  color: var(--ink);
 }
 
 .course-card .ccount {
